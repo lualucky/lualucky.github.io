@@ -6,18 +6,22 @@
 -->
 <html>
 	<head>
-		<title>Lua Lucky</title>
+		<title>KFP Catch</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
-  	 	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  		<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.dropotron.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="kfpcatch/Build/UnityLoader.js"></script>
+		<script>
+    var unityInstance = UnityLoader.instantiate("unityContainer", "kfpcatch/Build/Alpha 1.0.json");
+    </script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -44,54 +48,25 @@
 							</ul>
 						</nav>
 					</div>
+				<!-- Header -->
 
-				<!-- Extra -->
-					<div id="extra">
-						<div class="container">
-							<div class="row no-collapse-1">
-								<section class="4u"> <a href="#" class="image featured"><img src="images/pic01.jpg" alt=""></a>
-									<div class="box">
-										<p>A Kiara Takanashi (Hololive EN) fangame.</p>
-										<a href="kfpcatch.html" class="button">Play</a> </div>
-								</section>
-								<section class="4u"> <a href="#" class="image featured"><img src="images/pic02.jpg" alt=""></a>
-									<div class="box">
-										<p>Links to all of the games submitted for the first VTuber Game Jam, which took place 2-3 January 2021.&nbsp; &nbsp;&nbsp;</p>
-										<a href="vtgamejame.html" class="button">Check it out</a> </div>
-								</section>
-								<section class="4u"> <a href="#" class="image featured"><img src="images/pic03.jpg" alt=""></a>
-									<div class="box">
-										<p>A game made by Pumpino and Lua Lucky for the first VTuber Game Jam.</p>
-										<a href="themushroom.html" class="button">play</a> </div>
-								</section>
-							</div>
-							
-						</div>
+				<!-- Page -->
+					<div id="page" class="container">
+						<section>
+							<div style="width: 100%; height: 100%;">
+        <div style="width: 960px; height: 600px; margin: auto; ">
+            <div id="unityContainer" style="width: 960px; height: 600px; margin: auto;"></div>
+        </div>
+    </div>
+						</section>
 					</div>
-
-				<!-- Main -->
-					<div id="main">
-						<div class="container">
-							<div class="row"> 
-								
-								<!-- Content -->
-								
-								
-							</div>
-						</div>
-					</div>
+				<!-- /Page -->
 
 	</div>
-
-	<!-- Footer -->
+		
 	<!-- Copyright -->
 		<div id="copyright">
-			<div class="container">
-				<div class="copyright">
-					<p>Design: <a href="http://templated.co">TEMPLATED</a></p>
-					
-				</div>
-			</div>
+			<div class="container"> <span class="copyright">Design: <a href="http://templated.co">TEMPLATED</a> 
 		</div>
 
 	</body>
